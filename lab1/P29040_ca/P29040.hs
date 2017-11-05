@@ -36,9 +36,9 @@ ssort (head:tail) = insert (ssort (remove (head:tail) head)) head
 merge :: [Int] -> [Int] -> [Int]
 merge l1 [] = l1
 merge [] l2 = l2
-merge (hd1:tl1) (hd2:tl2)
-    | hd1 < hd2 = [hd1] ++ (merge tl1 (hd2:tl2))
-    | otherwise = [hd2] ++ (merge (hd1:tl1) tl2)
+merge (head1:tail1) (head2:tail2)
+    | head1 <= head2 = [head1] ++ (merge tail1 (head2:tail2))
+    | head1 >  head2 = [head2] ++ (merge (head1:tail1) tail2)
 
 ------------------------------------------------------------------------------------
 -------------------------------------- MSORT ---------------------------------------
@@ -59,10 +59,12 @@ msort array = merge
 qsort :: [Int] -> [Int]
 qsort xs = qsort' xs []
     where
+        qsort' :: [Int] -> [Int] -> [Int]
         qsort' [] result = result
         qsort' [x] result = x:result
         qsort' (x:xs) result = qpart xs [] [] result
             where
+                qpart :: [Int] -> [Int] -> [Int] -> [Int] -> [Int]
                 qpart [] half1 half2 result = qsort' half1 (x:qsort' half2 result)
                 qpart (x':xs') half1 half2 result
                     | x' <= x = qpart xs' (x':half1) half2 result
