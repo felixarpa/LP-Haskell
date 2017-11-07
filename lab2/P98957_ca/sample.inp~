@@ -1,0 +1,3 @@
+take 10 fibos
+fibos !! 10
+fibos !! 100
