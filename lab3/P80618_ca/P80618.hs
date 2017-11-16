@@ -1,10 +1,6 @@
 data Queue a = Queue [a] [a]
     deriving (Show)
 
-c = push 3 (push 2 (push 1 create))
-c1 = push 4 (pop (push 3 (push 2 (push 1 create))))
-c2 = push 4 (push 3 (push 2 create))
-
 create :: Queue a
 create = Queue [] []
 
@@ -24,4 +20,4 @@ empty (Queue [] []) = True
 empty _ = False
 
 instance Eq a => Eq (Queue a)
---    where (Queue xa xb) == (Queue ya yb) = (xa ++ reverse (xb)) == (ya ++ (reverse yb))
+    where (Queue xa xb) == (Queue ya yb) = (xa ++ reverse (xb)) == (ya ++ (reverse yb))

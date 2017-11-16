@@ -1,14 +1,5 @@
 data Tree a = Node a (Tree a) (Tree a) | Empty deriving (Show)
 
-t7 = Node 7 Empty Empty
-t6 = Node 6 Empty Empty
-t5 = Node 5 Empty Empty
-t4 = Node 4 Empty Empty
-t3 = Node 3 t6 t7
-t2 = Node 2 t4 t5
-t1 = Node 1 t2 t3
-t1' = Node 1 t3 t2
-
 size :: Tree a -> Int
 size Empty = 0
 size (Node _ a b) = 1 + size a + size b
@@ -60,7 +51,7 @@ build [ ] [ ]              = Empty
 build (x:preorder) inorder = Node x
                          (build leftPreorder  leftInorder )
                          (build rightPreorder rightInorder)
---    where  
+    where  
         leftInorder   = takeWhile (/= x) inorder
         leftPreorder  = take (length leftInorder) preorder
         rightPreorder = drop (length leftInorder) preorder
