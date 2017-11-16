@@ -1,0 +1,7 @@
+let ltVots = [("Joan Pere Jorbina Palau", 570), ("Niceto Brunildo Fornells", 679), ("Mariona Puig Peix", 701), ("Adriana de Tor Quemada", 451)]
+votsMinim ltVots 400
+votsMinim ltVots 600
+candidatMesVotat ltVots
+let ltIng = [("Mariona Puig Peix", 15456), ("Arnau Osorio Lucas", 27654), ("Arnau Brigat Pelfred", 18654), ("Niceto Brunildo Fornells", 14567)]
+votsIngressos ltVots ltIng
+rics ltVots ltIng
