@@ -56,15 +56,15 @@ breadthFirstRec (Empty:ts) = breadthFirstRec ts
 breadthFirstRec ((Node x left right):ts) = x : (breadthFirstRec $ ts ++ [left, right])
 
 build :: Eq a => [a] -> [a] -> Tree a
-build [ ] [ ] = Empty
-build [p]  _  = Node p Empty Empty
-build  _  [i] = Node i Empty Empty
-build (p:ps)  is  = Node (head ps)
-                     (build (ps)
-                            (takeWhile (/= p) is))
-                     (build (tail (dropWhile (/= last (takeWhile (/= p) is)) ps))
-                            (tail (dropWhile (/= p) is)))
-
+build [ ] [ ]              = Empty
+build (x:preorder) inorder = Node x
+                         (build leftPreorder  leftInorder )
+                         (build rightPreorder rightInorder)
+--    where  
+        leftInorder   = takeWhile (/= x) inorder
+        leftPreorder  = take (length leftInorder) preorder
+        rightPreorder = drop (length leftInorder) preorder
+        rightInorder  = tail (dropWhile (/= x) inorder)
 
 overlap :: (a -> a -> a) -> Tree a -> Tree a -> Tree a
 overlap _ tree1 Empty = tree1

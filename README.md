@@ -18,4 +18,11 @@ Haskell problems of Programming Languages (FIB)
 - [P71775](https://github.com/felixarpa/LP-Haskell/tree/master/lab2/P71775_ca) Definició de funcions d'ordre superior (2)
 - [P98957](https://github.com/felixarpa/LP-Haskell/tree/master/lab2/P98957_ca) Llistes infinites
 
+### Lab3
+
+- [P93632](https://github.com/felixarpa/LP-Haskell/tree/master/lab3/P37072_ca) Arbre binari
+- [P31745](https://github.com/felixarpa/LP-Haskell/tree/master/lab3/P80618_ca) Cua
+- [P93588](https://github.com/felixarpa/LP-Haskell/tree/master/lab3/P87974_ca) Hola maco/a!
+- [P90677](https://github.com/felixarpa/LP-Haskell/tree/master/lab3/P87082_ca) Índex de massa corporal
+
 
