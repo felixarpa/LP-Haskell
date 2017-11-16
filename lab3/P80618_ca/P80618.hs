@@ -1,6 +1,10 @@
 data Queue a = Queue [a] [a]
     deriving (Show)
 
+c = push 3 (push 2 (push 1 create))
+c1 = push 4 (pop (push 3 (push 2 (push 1 create))))
+let c2 = push 4 (push 3 (push 2 create))
+
 create :: Queue a
 create = Queue [] []
 

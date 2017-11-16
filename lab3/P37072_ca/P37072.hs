@@ -49,8 +49,8 @@ breadthFirstRec ((Node x left right):ts) = x : (breadthFirstRec $ ts ++ [left, r
 build :: Eq a => [a] -> [a] -> Tree a
 build [ ] [ ]              = Empty
 build (x:preorder) inorder = Node x
-                         (build leftPreorder  leftInorder )
-                         (build rightPreorder rightInorder)
+                                 (build leftPreorder  leftInorder )
+                                 (build rightPreorder rightInorder)
     where  
         leftInorder   = takeWhile (/= x) inorder
         leftPreorder  = take (length leftInorder) preorder
