@@ -2,7 +2,7 @@
 
 **Atenció!** Aquest codi no te llicencia, és a dir, no es pot copiar. ([explicació](https://choosealicense.com/no-license/), [Wikipedia](https://en.wikipedia.org/wiki/License-free_software)).
 
-## K Nearest Neighbors
+## K Nearest Neighbors
 
 Per executar la practia només cal compilar l'arxiu `main.hs` i executar-lo:
 
