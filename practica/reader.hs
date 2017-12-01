@@ -31,3 +31,27 @@ parseV v
     | v == "P"  = 'P'
     | otherwise = 'B'
 
+welcome = "Benvingut al Iris k Nearest Neighbors de Fèlix Arribas"
+
+bye = "\n\nGràcies. Pots veure el codi a https://github.com/felixarpa/LP-Haskell/tree/master/practica"
+
+kMessage :: Int -> String
+kMessage maxim = "\nVariable k (entre 1 i " ++ (show maxim) ++ "): "
+
+dMessage = "\nFunció de distancia. Euclediana (E) o Manhattan (M): "
+dValues = [ "E", "M" ]
+vMessage = "\nMecanisme de votació: Simple (S) o Ponderat (P): "
+vValues = [ "S", "P" ]
+
+aMessage = "\nAvaluació accuracy o exactitud: "
+lMessage = "\nAvaluació lost o error:         "
+
+get :: String -> [String] -> IO String
+get message correctValues = do    
+    putStrLn message
+    line <- getLine
+    if elem line correctValues then
+        return(line)
+    else
+        do get message correctValues
+
