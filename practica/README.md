@@ -24,19 +24,41 @@ testFile  = TESTING_PATH
 ## Exemple d'execució
 
 ```
-Benvingut al Iris k Nearest Neighbors de Fèlix Arribas
+  Benvingut al Iris k Nearest Neighbors de Fèlix Arribas
 
-Variable k (entre 1 i 100): 
-70
+  Variable k (entre 1 i 100): 
+➜ 70
 
-Funció de distancia. Euclediana (E) o Manhattan (M): 
-E
+  Funció de distancia. Euclediana (E) o Manhattan (M): 
+➜ E
 
-Mecanisme de votació: Simple (S) o Ponderat (P): 
-S
+  Mecanisme de votació: Simple (S) o Ponderat (P): 
+➜ S
 
-Avaluació accuracy o exactitud: 0.72
-Avaluació lost o error:         0.28
+  Avaluació accuracy o exactitud: 0.72
+  Avaluació lost o error:         0.28
 
-Gràcies. Pots veure el codi a https://github.com/felixarpa/LP-Haskell/tree/master/practica
+  Gràcies. Pots veure el codi a https://github.com/felixarpa/LP-Haskell/tree/master/practica
 ```
+
+## Contingut
+
+- [main](main.hs): Senzill programa que llegeix les variables d'entrada i executa la funció K Nearest Neighbors.
+- [reader](reader.hs): Llegeix els fitxers i els transforma a Data Types de haskell. També ofereix els missatges de sortida
+- [knn](knn.hs): Tot l'algoritme KNN i les seves funcions auxiliars.
+- [reader.test](reader.test.hs): Tests per [reader.hs](reader.hs)
+- [knn.test](knn.test.hs): Tests per [reader.hs](knn.hs)
+
+Per executar els tests cal fer:
+
+```
+➜ ghci
+...
+ghci➜ :l reader.test.hs
+ghci➜ runTestTT tests
+...
+ghci➜ :l knn.test.hs
+ghci➜ runTestTT tests
+...
+```
+

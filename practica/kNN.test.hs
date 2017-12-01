@@ -5,55 +5,55 @@ import Iris
 -- https://hackage.haskell.org/package/HUnit
 -- runTestTT tests
 
-tests = TestList [  givenAppearingWord_whenCountFrequency_thenCountsCorrectly,
-                    givenUnknownWord_whenCountFrequency_thenDoesNotCount,
-                    givenEmptyArray_whenCountFrequency_thenDoesNotCount,
-                    
-                    givenWords_whenMoreFrequent_thenMostAppearing,
-                    
-                    givenFloat_whenPonderada_thenInversa,
-                    
-                    givenFloat_whenBasica_thenReturnSameValue,
-                    
-                    givenDifferentWords_whenValueAccuracy_thenReturnZero,
-                    givenEqualWords_whenValueAccuracy_thenReturnOne,
-                    
-                    givenDifferentWords_whenValueLost_thenReturnOne,
-                    givenEqualWords_whenValueLost_thenReturnZero,
-                    
-                    givenAccuarcyEval_whenComputeEvaluation_thenReturn25,
-                    givenLostEval_whenComputeEvaluation_thenReturn75,
-                    givenEmptyTestArray_whenComputeEvaluation_thenReturn0,
-                    
-                    givenTwoInputs_whenComputeManhattan_thenReturnValue,
-                    givenTwoNegativeInputs_whenComputeManhattan_thenReturnValue,
-                    
-                    givenTwoInputs_whenComputeEuclediana_thenReturnValue,
-                    givenTwoNegativeInputs_whenComputeEuclediana_thenReturnValue,
-                    
-                    givenFloatArrays_whenAddDistancesEuclediana_thenReturn,
-                    givenFloatArrays_whenAddDistancesManhattan_thenReturn,
-                    
-                    givenIris_whenAddDistancesEuclediana_thenReturn,
-                    givenIris_whenAddDistancesManhattan_thenReturn,
-                    
-                    givenIrisEucledianaBasica_whenNeighbor_thenIrisNeighbor,
-                    givenIrisManhattanBasica_whenNeighbor_thenIrisNeighbor,
-                    givenIrisEucledianaPonderada_whenNeighbor_thenIrisNeighbor,
-                    givenIrisManhattanPonderada_whenNeighbor_thenIrisNeighbor,
+knnTests = TestList [ givenAppearingWord_whenCountFrequency_thenCountsCorrectly,
+                      givenUnknownWord_whenCountFrequency_thenDoesNotCount,
+                      givenEmptyArray_whenCountFrequency_thenDoesNotCount,
+                      
+                      givenWords_whenMoreFrequent_thenMostAppearing,
+                      
+                      givenFloat_whenPonderada_thenInversa,
+                      
+                      givenFloat_whenBasica_thenReturnSameValue,
+                      
+                      givenDifferentWords_whenValueAccuracy_thenReturnZero,
+                      givenEqualWords_whenValueAccuracy_thenReturnOne,
+                      
+                      givenDifferentWords_whenValueLost_thenReturnOne,
+                      givenEqualWords_whenValueLost_thenReturnZero,
+                      
+                      givenAccuarcyEval_whenComputeEvaluation_thenReturn25,
+                      givenLostEval_whenComputeEvaluation_thenReturn75,
+                      givenEmptyTestArray_whenComputeEvaluation_thenReturn0,
+                      
+                      givenTwoInputs_whenComputeManhattan_thenReturnValue,
+                      givenTwoNegativeInputs_whenComputeManhattan_thenReturnValue,
+                      
+                      givenTwoInputs_whenComputeEuclediana_thenReturnValue,
+                      givenTwoNegativeInputs_whenComputeEuclediana_thenReturnValue,
+                      
+                      givenFloatArrays_whenAddDistancesEuclediana_thenReturn,
+                      givenFloatArrays_whenAddDistancesManhattan_thenReturn,
+                      
+                      givenIris_whenAddDistancesEuclediana_thenReturn,
+                      givenIris_whenAddDistancesManhattan_thenReturn,
+                      
+                      givenIrisEucledianaBasica_whenNeighbor_thenIrisNeighbor,
+                      givenIrisManhattanBasica_whenNeighbor_thenIrisNeighbor,
+                      givenIrisEucledianaPonderada_whenNeighbor_thenIrisNeighbor,
+                      givenIrisManhattanPonderada_whenNeighbor_thenIrisNeighbor,
 
-                    givenK1Ponderada_whenKNeareastNeighbors_thenTomaquet,
-                    givenK1Basica_whenKNeareastNeighbors_thenTomaquet,
-                    givenK2Basica_whenKNeareastNeighbors_thenTomaquet,
+                      givenK1Ponderada_whenKNeareastNeighbors_thenTomaquet,
+                      givenK1Basica_whenKNeareastNeighbors_thenTomaquet,
+                      givenK2Basica_whenKNeareastNeighbors_thenTomaquet,
 
-                    givenK1NN_whenKNN_thenPatataCotxeTomaquet,
-                    givenK2NN_whenKNN_thenPatatsTomaquetCotxeTomaquetTomaquetPatata,
-                    givenK4NN_whenKNN_thenReturnWithRepetitions,
+                      givenK1NN_whenKNN_thenPatataCotxeTomaquet,
+                      givenK2NN_whenKNN_thenPatatsTomaquetCotxeTomaquetTomaquetPatata,
+                      givenK4NN_whenKNN_thenReturnWithRepetitions,
 
-                    givenK3NN_whenIrisKNN_thenReturnMoreFrequent,
-                    givenK1NN_whenIrisKNN_thenReturnMoreFrequent,
+                      givenK3NN_whenIrisKNN_thenReturnMoreFrequent,
+                      givenK1NN_whenIrisKNN_thenReturnMoreFrequent,
 
-                    givenResults_whenApplyAv_thenPair ]
+                      givenResults_whenApplyAv_thenPair ]
 
 -- TEST LIST
 

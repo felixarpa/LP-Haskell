@@ -5,10 +5,10 @@ import Iris
 -- https://hackage.haskell.org/package/HUnit
 -- runTestTT tests
 
-tests = TestList [  given3LinesText_whenTextToLines_thenReturnArrayOfLines,
-                    givenTextWithCommas_whenLineToArray_thenReturnArrayOfWords,
-                    givenArrayOfValues_whenArrayToIris_thenReturnIris,
-                    givenText_whenParseIris_thenReturnIrisArray ]
+readerTests = TestList [ given3LinesText_whenTextToLines_thenReturnArrayOfLines,
+                         givenTextWithCommas_whenLineToArray_thenReturnArrayOfWords,
+                         givenArrayOfValues_whenArrayToIris_thenReturnIris,
+                         givenText_whenParseIris_thenReturnIrisArray ]
 
 -- TEST LIST
 
