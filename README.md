@@ -24,11 +24,13 @@ Haskell problems of Programming Languages (FIB)
 - [P31745](lab3/P80618_ca/P80618.hs) Cua
 - [P93588](lab3/P87974_ca/P87974.hs) Hola maco/a!
 - [P90677](lab3/P87082_ca/P87082.hs) Índex de massa corporal
+- [P70540](lab3/P70540_ca/P70540.hs) Expressions
 
 ### More problems
 
 - [P82972](more/P82972_ca/P82972.hs) Candidats
 - [P11570](more/P11570_ca/P11570.hs) Pensions
+- 
 
 ## Pràctica
 

@@ -1,0 +1,8 @@
+N 3 (N 1 E (N 2 E E)) (N 4 E E)
+4
+1
+4
+[1,2,3,4]
+[False,True,True,True,True,False]
+N 3 (N 1 (N 0 E E) (N 2 E E)) (N 4 E E)
+[1,2,4]

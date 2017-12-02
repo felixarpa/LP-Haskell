@@ -1,0 +1,6 @@
+sort $ zerosNones1 3
+sort $ zerosNones2 5 2
+sort $ subsets1 ["hola", "adeu", "hi"]
+sort $ subsets1 [1..2]
+let f xs = sort (map sort xs)
+f $ subsets2 2 ["hola", "adeu", "hi", "hello", "bye"]

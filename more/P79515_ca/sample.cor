@@ -1,0 +1,6 @@
+N 2 1 (N 1 0 E E) (N 3 0 E E)
+N 2 2 (N 1 0 E E) (N 4 1 (N 3 0 E E) (N 5 0 E E))
+(True,1)
+(True,2)
+(True,-1)
+(False,-99)
