@@ -1,0 +1,1 @@
+mult :: [Double] -> [Double] -> [Double]

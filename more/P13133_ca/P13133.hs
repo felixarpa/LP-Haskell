@@ -32,6 +32,5 @@ isPrime x
     | x == 1 = False
     | otherwise = isPrimeRec x (floor (sqrt (fromIntegral x)))
 
-
 isPalindromic :: Integer -> Bool
 isPalindromic n = and $ zipWith (==) (show n) (reverse $ show n)
