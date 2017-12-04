@@ -28,7 +28,7 @@ Haskell problems of Programming Languages (FIB)
 
 ### More problems
 
-- [P13133](more/P13133_ca/P13133.hs) Càlculs (1): ***test-4:** Funció largestPrimeFactor*
+- [P13133](more/P13133_ca/P13133.hs) Càlculs (1)
 - [P97301](more/P97301_ca/P97301.hs) FizzBuzz
 - [P82972](more/P82972_ca/P82972.hs) Candidats
 - [P11570](more/P11570_ca/P11570.hs) Pensions

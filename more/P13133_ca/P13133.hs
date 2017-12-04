@@ -18,7 +18,7 @@ largestPrimeFactor :: Integer -> Integer
 largestPrimeFactor n = head $ filter (isPrime) $ filter (isFactor n) $ alReves n
 
 alReves :: Integer -> [Integer]
-alReves n = takeWhile (>0) $ iterate (sub) (div n 2)
+alReves n = takeWhile (>0) $ iterate (sub) (n)
 
 sub :: Integer -> Integer
 sub x = x - 1
@@ -35,7 +35,7 @@ isPrimeRec x div
 isPrime :: Integer -> Bool
 isPrime x
     | x == 0 = False
-    | x == 1 = False
+    | x == 1 = True
     | otherwise = isPrimeRec x (floor (sqrt (fromIntegral x)))
 
 isPalindromic :: Integer -> Bool
