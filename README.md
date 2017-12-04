@@ -28,6 +28,7 @@ Haskell problems of Programming Languages (FIB)
 
 ### More problems
 
+- [P13133](more/P13133_ca/P13133.hs) Càlculs (1): ***test-4:** Funció largestPrimeFactor*
 - [P97301](more/P97301_ca/P97301.hs) FizzBuzz
 - [P82972](more/P82972_ca/P82972.hs) Candidats
 - [P11570](more/P11570_ca/P11570.hs) Pensions
@@ -36,10 +37,8 @@ Haskell problems of Programming Languages (FIB)
 
 ### TODO
 
-- [P13133](more/P13133_ca/) Càlculs (1)
-- [P41691](more/P41691_ca/) Multiplicació de polinomisP41691_ca
+- [P41691](more/P41691_ca/) Multiplicació de polinomis
 - [P79515](more/P79515_ca/) Arbres AVL
-- [P87706](more/P87706_ca/) Arbres binaris de cerca
 - [P54585](more/P54585_ca/) Punts més propers
 - [P77791](more/P77791_ca/) Collatz
 - [P27104](more/P27104_ca/) Programació dinàmica

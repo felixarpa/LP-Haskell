@@ -1,9 +1,9 @@
 sumMultiples35 :: Integer -> Integer
-sumMultiples35 n = sum $ filter (multiple35) [0..n - 1]
+sumMultiples35 n = (sumMultiples 3 n) + (sumMultiples 5 n) - (sumMultiples 15 n)
 
-multiple35 :: Integer -> Bool
-multiple35 x = x `mod` 3 == 0 ||
-               x `mod` 5 == 0
+sumMultiples :: Integer -> Integer -> Integer
+sumMultiples x n = x * n' * (n' + 1) `div` 2
+    where n' = div (n - 1) x
 
 fibonacci :: Int -> Integer
 fibonacci n = last $ take (n + 1) $ fibonaccis 0 1
@@ -11,11 +11,17 @@ fibonacci n = last $ take (n + 1) $ fibonaccis 0 1
 fibonaccis :: Integer -> Integer -> [Integer]
 fibonaccis x y = x : fibonaccis y (x + y)
 
-sumEvenFibonaccis :: Int -> Integer
-sumEvenFibonaccis n = sum $ filter (even) $ take (n - 1) $ fibonaccis 0 1
+sumEvenFibonaccis :: Integer -> Integer
+sumEvenFibonaccis n = sum $ filter even $ takeWhile (< n) $ fibonaccis 0 1
 
 largestPrimeFactor :: Integer -> Integer
-largestPrimeFactor n = last $ filter (isPrime) $ filter (isFactor n) [1..n]
+largestPrimeFactor n = head $ filter (isPrime) $ filter (isFactor n) $ alReves n
+
+alReves :: Integer -> [Integer]
+alReves n = takeWhile (>0) $ iterate (sub) (div n 2)
+
+sub :: Integer -> Integer
+sub x = x - 1
 
 isFactor :: Integer -> Integer -> Bool
 isFactor x y = x `mod` y == 0 
